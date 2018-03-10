@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Snapshot Should create a button with custom styles 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "red",
+      "border": "none",
+      "color": "white",
+      "cursor": "pointer",
+      "padding": 15,
+    }
+  }
+>
+  anything
+</button>
+`;
+
+exports[`Button Snapshot should create a basic button with default styles 1`] = `
+<button
+  style={
+    Object {
+      "backgroundColor": "blue",
+      "border": "none",
+      "color": "white",
+      "cursor": "pointer",
+      "padding": 15,
+    }
+  }
+>
+  Click me
+</button>
+`;

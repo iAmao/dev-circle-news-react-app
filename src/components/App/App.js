@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import logo from '../../logo.svg';
 import './App.css';
 
+// Components
+import Button from '../Button/Button';
+
 // Actions
 import * as newsAction from '../../store/actions/news.action';
 
@@ -24,8 +27,6 @@ class App extends Component {
 
   render() {
     const news = this.props.news;
-    console.log(news);
-    debugger;
     return (
       <div className="App">
         <header className="App-header">
@@ -34,16 +35,21 @@ class App extends Component {
         </header>
         {news.data.map((news) => {
           return (
-            <div key={news.id}>
+            <div key={news.id} className="news">
               <h4>{news.title}</h4>
-              <button onClick={() => this.deleteNews(news)}>delete</button>
+              <Button
+                style={{ backgroundColor: 'red' }}
+                onClick={() => this.deleteNews(news)}
+              >
+                delete
+              </Button>
             </div>
           );
         })}
         <input type="text" ref={(i) => this.inputRef = i } />
-        <button onClick={this.addNews}>
+        <Button onClick={this.addNews}>
           Add Headline
-        </button>
+        </Button>
       </div>
     );
   }

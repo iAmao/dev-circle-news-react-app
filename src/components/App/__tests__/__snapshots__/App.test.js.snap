@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App  Snapshot should render app component with children 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="App-header"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1
+      className="App-title"
+    >
+      Welcome to React
+    </h1>
+  </header>
+  <div
+    className="news"
+  >
+    <h4>
+      35Million richer snake
+    </h4>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "red",
+          "border": "none",
+          "color": "white",
+          "cursor": "pointer",
+          "padding": 15,
+        }
+      }
+    >
+      delete
+    </button>
+  </div>
+  <div
+    className="news"
+  >
+    <h4>
+      Monkey swallows 70Million :)
+    </h4>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "red",
+          "border": "none",
+          "color": "white",
+          "cursor": "pointer",
+          "padding": 15,
+        }
+      }
+    >
+      delete
+    </button>
+  </div>
+  <input
+    type="text"
+  />
+  <button
+    onClick={[Function]}
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "border": "none",
+        "color": "white",
+        "cursor": "pointer",
+        "padding": 15,
+      }
+    }
+  >
+    Add Headline
+  </button>
+</div>
+`;
